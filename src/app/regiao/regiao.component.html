@@ -1,0 +1,65 @@
+<div class="menu-lateral" *ngIf="regiao">
+  <div class="container-options">
+    <div class="container-fluid">
+      <div class="col-3">
+        <br>
+        <br>
+
+        <div class="list-group" style="font-size: 12px;">
+
+          <a *ngFor="let map of regiao.maps; let i = index"  class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
+
+            {{ map.nome }}
+          </a>
+        </div>
+
+
+        <div *ngIf="showConteudo" class="box-conteudo">
+
+          <div class="titulo">
+            <h3>{{ regiao.regiao }}</h3>
+          </div>
+
+          <div class="box-texto">
+            <p>
+              {{ regiao.desc }}
+            </p>
+          </div>
+
+        </div>
+
+
+        <div *ngIf="!showConteudo" class="box-conteudo map-frame" item-width="700" item-height="500">
+
+          <br>
+          <br>
+          <br>
+          <h5> {{ titulo }} </h5>
+
+
+          <iframe width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
+
+           <div class="legenda">
+
+
+          <div style="position:relative; top: -550px; left: 700px;" *ngFor="let cor of this.leg; let i = index">
+              <div class="{{this.leg[i]}}">
+
+              </div>
+          </div>
+            <h5  style="position:relative; top: -750px; left: 750px; height: 30px;">Legenda </h5>
+            <div style="position:relative; top: -740px; left: 750px; height: 30px;" *ngFor="let titulo of this.Ltitulo; let i = index">
+
+              {{this.Ltitulo[i]}}
+
+
+            </div>
+        </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

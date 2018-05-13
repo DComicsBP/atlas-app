@@ -1,0 +1,15 @@
+@media screen and (max-width: 300) {
+  .div-posicao {
+       width: 5%;
+       left: 0px;
+   }
+}
+
+.div-posicao{
+
+position: relative;
+top: 50px;
+left: 25%;
+width: 60%;
+text-align: justify;
+}

@@ -1,0 +1,13 @@
+<div *ngFor="let a of curso.ob.router;let i = index" class="d-inline-block " style="position: relative; top:50px; padding-left: 20px;padding-top: 10px;">
+
+
+  <div class="card" style="width: 18rem;">
+
+    <div class="card-body">
+      <h5 class="card-title"> {{a.nome}}</h5>
+      <p class="card-text">{{a.resumo}}</p>
+      <a href="{{a.link}}" class="btn btn-primary">Baixar</a>
+    </div>
+
+  </div>
+</div>
