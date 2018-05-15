@@ -1,10 +1,55 @@
+.box-conteudo{
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  width: 50%;
+  text-align: justify;
+}
+.menu-lateral{
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  max-height: 50px;
+  text-align: justify;
+}
+
+.titulo{
+  position: absolute;
+  max-width: 300px;
+}
+.box-texto{
+  position: relative;
+
+  top: 70px;
+}
+
+.map-frame {
+  position: relative;
+  left:250px;
+  width: 700px;
+  height: 500px;
+  max-width: 700px;
+  max-height: 500px;
+
+}
+.box-titulo{
+  position: relative;
+  top: 70px;
+}
+
+
+
 .legenda{
   position: relative;
+  max-width: 100px;
+  max-height: 100px;
   top: 200px;
 
 }
 .branco{
   margin: 10px;
+  max-width: 20px;
+  max-height: 20px;
   width: 20px;
   height: 20px;
   background-color:white;
@@ -29,6 +74,9 @@ Densidade Demográfica do Rio Grande do Sul, 2010 (hab/km2)
   border: 1px solid;
   border-color: grey;
   background-color:#ffffff;
+  max-width: 100px;
+  max-height: 100px;
+
 
 }
 
@@ -37,6 +85,8 @@ Densidade Demográfica do Rio Grande do Sul, 2010 (hab/km2)
   width: 20px;
   height: 20px;
   background-color: #ffe599;
+  max-width: 100px;
+  max-height: 100px;
 
 }
 
@@ -45,6 +95,9 @@ Densidade Demográfica do Rio Grande do Sul, 2010 (hab/km2)
   width: 20px;
   height: 20px;
   background-color: #ffd966;
+  max-width: 100px;
+  max-height: 100px;
+
 }
 
 .leg4{
@@ -52,6 +105,9 @@ Densidade Demográfica do Rio Grande do Sul, 2010 (hab/km2)
   width: 20px;
   height: 20px;
   background-color:#f1C232;
+  max-width: 100px;
+  max-height: 100px;
+
 }
 
 .leg5{
@@ -59,6 +115,9 @@ Densidade Demográfica do Rio Grande do Sul, 2010 (hab/km2)
   width: 20px;
   height: 20px;
   background-color: #7f6000;
+  max-width: 100px;
+  max-height: 100px;
+
 }
 
 /*
@@ -69,6 +128,9 @@ Taxa de População Raça/Cor - Branca
   width: 20px;
   height: 20px;
   background-color: #d9ead3;
+  max-width: 100px;
+  max-height: 100px;
+
 }
 
 .leg7{
@@ -76,6 +138,9 @@ Taxa de População Raça/Cor - Branca
   width: 20px;
   height: 20px;
   background-color: #93c47d;
+  max-width: 100px;
+  max-height: 100px;
+
 }
 
 .leg8{
@@ -83,6 +148,9 @@ Taxa de População Raça/Cor - Branca
   width: 20px;
   height: 20px;
   background-color: #38761d;
+  max-width: 100px;
+  max-height: 100px;
+
 }
 
 .leg9{
@@ -90,6 +158,9 @@ Taxa de População Raça/Cor - Branca
   width: 20px;
   height: 20px;
   background-color:#274e13;
+  max-width: 100px;
+  max-height: 100px;
+
 }
 
 /*

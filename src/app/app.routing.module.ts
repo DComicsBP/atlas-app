@@ -14,8 +14,8 @@ export const appRoutes: Routes = [
   { path: 'equipe', component: EquipeComponent },
   { path: 'metodologia', component: MetodologiaComponent },
   { path: 'regiao', component: RegiaoComponent },
-  { path: 'regiao/:id', component: RegiaoComponent },
-  { path: '**', redirectTo: '/projeto' }
+  { path: 'regiao/:id', component: RegiaoComponent }
+
 ];
 
 @NgModule({

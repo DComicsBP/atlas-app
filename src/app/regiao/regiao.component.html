@@ -1,7 +1,7 @@
 <div class="menu-lateral" *ngIf="regiao">
   <div class="container-options">
     <div class="container-fluid">
-      <div class="col-3">
+      <div class="col-2">
         <br>
         <br>
 
@@ -12,7 +12,10 @@
             {{ map.nome }}
           </a>
         </div>
-
+      </div>
+    </div>
+  </div>
+  </div>
 
         <div *ngIf="showConteudo" class="box-conteudo">
 
@@ -29,7 +32,7 @@
         </div>
 
 
-        <div *ngIf="!showConteudo" class="box-conteudo map-frame" item-width="700" item-height="500">
+        <div *ngIf="!showConteudo" class="box-conteudo map-frame" >
 
           <br>
           <br>
@@ -43,23 +46,19 @@
 
 
           <div style="position:relative; top: -550px; left: 700px;" *ngFor="let cor of this.leg; let i = index">
-              <div class="{{this.leg[i]}}">
+              <div class="{{cor}}">
 
               </div>
           </div>
-            <h5  style="position:relative; top: -750px; left: 750px; height: 30px;">Legenda </h5>
-            <div style="position:relative; top: -740px; left: 750px; height: 30px;" *ngFor="let titulo of this.Ltitulo; let i = index">
+            <h5  style="position:relative; top: -750px; left: 750px; height: 30px;" >Legenda </h5>
+            <div style="position:relative; top: -740px; left: 750px; height: 30px; width: 150px; " *ngFor="let titulo of this.Ltitulo; let i = index">
 
-              {{this.Ltitulo[i]}}
+              {{titulo}}
 
 
             </div>
         </div>
 
-
-
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
