@@ -45,18 +45,23 @@
            <div class="legenda">
 
 
-          <div style="position:relative; top: -550px; left: 700px;" *ngFor="let cor of this.leg; let i = index">
-              <div class="{{cor}}">
+            <h5 >Legenda </h5>
 
-              </div>
-          </div>
-            <h5  style="position:relative; top: -750px; left: 750px; height: 30px;" >Legenda </h5>
-            <div style="position:relative; top: -740px; left: 750px; height: 30px; width: 150px; " *ngFor="let titulo of this.Ltitulo; let i = index">
-
-              {{titulo}}
+            <div style="height: 500px">
 
 
             </div>
+            <div style="height: 500px; position: relative;top:-100px">
+
+                <div  *ngFor="let legenda of this.legendasP; let i = index" style=" margin: 10px; max-width: 150px; width: 650px;height: 20px;">
+
+                 {{legenda.tit}}
+                 <div class="{{legenda.leg}}"></div>
+
+                  </div>
+
+              </div>
+
         </div>
 
         </div>

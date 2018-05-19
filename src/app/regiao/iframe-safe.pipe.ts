@@ -4,7 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 @Pipe({
   name: 'safe'
 })
-export class IframeSafePipse implements PipeTransform {
+export class IframeSafePipe implements PipeTransform {
 
   constructor(private _sanitizer: DomSanitizer) { }
 

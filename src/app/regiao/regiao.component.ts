@@ -26,12 +26,24 @@ export class RegiaoComponent implements OnInit {
 
   }
 
+  // tslint:disable-next-line:member-ordering
+  legenda = null;
+  // tslint:disable-next-line:member-ordering
+  legendasP = [];
+
   showMap(link, titulo, ltitulo, leg) {
+    this.legendasP = [];
     this.showConteudo = false;
     this.titulo = titulo;
     this.mapUrl = link;
     this.Ltitulo = ltitulo;
     this.leg = leg;
+
+  for (let i = 0; i < leg.length; i++) {
+    this.legendasP.push({leg: this.leg[i], tit: this.Ltitulo[i]});
+  }
+
+  console.log(this.legendasP);
   }
 
   private _get(routerId) {
@@ -39,20 +51,4 @@ export class RegiaoComponent implements OnInit {
     if (this.regiao) { this.showConteudo = true; }
 
   }
-}
-
-import { Pipe, PipeTransform } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
-
-@Pipe({
-  name: 'safe'
-})
-export class IframeSafePipe implements PipeTransform {
-
-  constructor(private _sanitizer: DomSanitizer) { }
-
-  transform(url) {
-    return this._sanitizer.bypassSecurityTrustResourceUrl(url);
-  }
-
 }
