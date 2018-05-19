@@ -10,12 +10,11 @@ export const appRoutes: Routes = [
   { path: '', redirectTo: '/projeto', pathMatch: 'full' },
   { path: 'projeto', component: ProjetoComponent },
   { path: 'material', component: MaterialComponent },
-  { path: 'material/:id', component: MaterialComponent },
   { path: 'equipe', component: EquipeComponent },
   { path: 'metodologia', component: MetodologiaComponent },
   { path: 'regiao', component: RegiaoComponent },
-  { path: 'regiao/:id', component: RegiaoComponent }
-
+  { path: 'regiao/:id', component: RegiaoComponent },
+  { path: 'material/:id', component: MaterialComponent }
 ];
 
 @NgModule({

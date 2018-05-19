@@ -29,4 +29,10 @@ curso: any;
     this.curso = this._materialService.getCurso(routerId);
     }
 
+
+    public scrollToBottom(id) {
+      const div = document.getElementById(id);
+      div.scrollTop = div.scrollHeight - div.clientHeight;
+   }
+
 }
