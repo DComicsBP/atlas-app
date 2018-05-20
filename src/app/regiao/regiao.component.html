@@ -1,21 +1,21 @@
 <div class="menu-lateral" *ngIf="regiao">
-  <div class="container-options">
-    <div class="container-fluid">
-      <div class="col-2">
-        <br>
-        <br>
+    <div class="container-options">
+      <div class="container-fluid">
+        <div class="col-3">
+          <br>
+          <br>
 
-        <div class="list-group" style="font-size: 12px;">
+          <div class="list-group" style="font-size: 12px;">
 
-          <a *ngFor="let map of regiao.maps; let i = index"  class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
+            <a *ngFor="let map of regiao.maps; let i = index"  class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
 
-            {{ map.nome }}
-          </a>
+              {{ map.nome }}
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </div>
+    </div>
 
         <div *ngIf="showConteudo" class="box-conteudo">
 
@@ -37,33 +37,33 @@
           <br>
           <br>
           <br>
-          <h5 > {{ titulo }} </h5>
+          <h5 style="position: relative; left: 100px;"> {{ titulo }} </h5>
 
-
+          <div style="position: relative; left: 50px;">
           <iframe width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe"></iframe>
 
-           <div class="legenda">
+          </div>
 
+           <div  style="position: relative; top:-500px;left: 550px;" class="container col-4">
+              <h5 >Legenda </h5>
+            <div class="row">
+                <article  style="position: relative;top: 2px" class="col-xs-3">
+                    <div  *ngFor="let legenda of this.legendasP; let i = index" >
 
-            <h5 >Legenda </h5>
+                        <div class="{{legenda.leg}}"></div>
+                    </div>
+                </article>
 
-            <div style="height: 500px">
+                <article class="col-xs-3">
+                    <div  *ngFor="let legenda of this.legendasP; let i = index" style="margin: 7px;">
+                        {{legenda.tit}}
+                    </div>
 
+                </article>
 
             </div>
-            <div style="height: 500px; position: relative;top:-100px">
 
-                <div  *ngFor="let legenda of this.legendasP; let i = index" style=" margin: 10px; max-width: 150px; width: 650px;height: 20px;">
-
-                 {{legenda.tit}}
-                 <div class="{{legenda.leg}}"></div>
-
-                  </div>
-
-              </div>
 
         </div>
-
-        </div>
-
+      </div>
 
