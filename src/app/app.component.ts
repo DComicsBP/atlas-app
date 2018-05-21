@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   src = '../assets/images/ifrs-google-maps.PNG';
+  estilo = '';
+
+  onclickEvent() {
+    this.estilo = 'contrast';
+  }
+
 }

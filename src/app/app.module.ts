@@ -10,6 +10,7 @@ import { MaterialComponent } from './material/material.component';
 import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { AppRoutingModule } from './app.routing.module';
 import { SkipImportComponent } from './skip-import/skip-import.component';
+import { FooterAppComponent } from './footer-app/footer-app.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SkipImportComponent } from './skip-import/skip-import.component';
     MaterialComponent,
     MetodologiaComponent,
     IframeSafePipe,
-    SkipImportComponent
+    SkipImportComponent,
+    FooterAppComponent
   ],
   imports: [
     BrowserModule,
