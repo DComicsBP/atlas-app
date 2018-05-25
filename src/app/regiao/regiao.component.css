@@ -1,15 +1,14 @@
 .box-conteudo{
   position: relative;
-  top: 30%;
+  top:-500px;
   left: 40%;
   width: 50%;
   text-align: justify;
 }
 .menu-lateral{
   position: relative;
-  top: 15%;
-  width: 100%;
-  max-height: 50px;
+  top:-500px;
+  width: 700px;
   text-align: justify;
   cursor:pointer;
   color: royalblue;
@@ -17,35 +16,33 @@
 
 .titulo{
   position: relative;
+  top:-500px;
   max-width: 300px;
 }
 .box-texto{
   position: relative;
-
+  top:-500px;
   top: 70px;
 }
 
 .map-frame {
   position: relative;
-  left:250px;
-  width: 700px;
-  height: 500px;
-  max-width: 700px;
-  max-height: 500px;
-
+  top: -1000px;
+  left: 300px;
 }
 .box-titulo{
   position: relative;
-  top: 70px;
+  top:-500px;
 }
 
 
 
 .legenda{
   position: relative;
+  top:-500px;
+
   max-width: 100px;
   max-height: 100px;
-  top: 200px;
 
 }
 .branco{
@@ -59,9 +56,10 @@
 }
 
 .conteudo{
-  position: absolute;
-  top:-1px;
-  left: 45px;
+  position: relative;
+  top:-500px;
+
+
 
 }
 

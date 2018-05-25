@@ -1,76 +1,71 @@
-<div class="{{estilo}}">
-<app-skip-import></app-skip-import>
-<div style="position: relative;top: -550px;" id="myDiv">
-    <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
-        <ul id="menu-barra-temp" style="list-style:none;">
-          <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
-            <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
-          </li>
-          <li>
-            <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
-          </li>
-        </ul>
+<div class="{{estilo}}" id="acessibility">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" routerLink="projeto">Atlas Ambiental</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="metodologia">Metodologia</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style=" cursor:pointer;">
+                         Mapas Tematicos
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                        <li><a class="dropdown-item" routerLink="regiao/1" style=" cursor:pointer;">Demografia</a></li>
+                        <li><a class="dropdown-item" routerLink="regiao/2" style=" cursor:pointer;">Administrativos</a></li>
+                        <li><a class="dropdown-item" routerLink="regiao/3" style=" cursor:pointer;">Violência</a></li>
+                        <li><a class="dropdown-item" routerLink="regiao/4" style=" cursor:pointer;">Mortalidade</a></li>
+                        <li><a class="dropdown-item" routerLink="regiao/5" style=" cursor:pointer;">Saude Ambiental</a></li>
+
+                      </div>
+                    </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false" style=" cursor:pointer;">
+                      Textos de Apoio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+
+                      <li><a href="#" class="dropdown-item"  routerLink="material/1" style=" cursor:pointer;">Textos de Apoio</a></li>
+                      <li><a href="#" class="dropdown-item"  routerLink="material/2" style=" cursor:pointer;">Numeros Temáticos</a></li>
+                      <li><a href="#" class="dropdown-item"  routerLink="material/3" style=" cursor:pointer;">Notas Infromativas</a></li>
+
+
+                    </div>
+                  </li>
+
+            <li class="nav-item"> <a class="nav-link" routerLink="equipe" href="#">Equipe</a> </li>
+
+
+          </ul>
+        </div>
+      </nav>
+
+        <input   type="button" id="btnAumentar" class="btn bg-dark inputs" value=" A + " style="color: #EDEDED; font-size: 15px; width: 90px; height: 35px;" onclick="obterTamanhoFonte()">
+        <input type="button" id="btnDiminuir" class="btn bg-dark inputs" value=" A - " style="color: #EDEDED; font-size: 15px; width: 90px; height: 35px;" onclick="obterTamanhoFonte()">
+        <a class="btn bg-dark inputs" style="color: #EDEDED; font-size: 15px; height: 35px;" (click)="onclickEvent('contrast')">Alto Contraste</a>
+<br>
+<br>
+      <div class="container" style="position: relative; height: 500px; max-height: 1000px">
+
+
+
+      </div>
+    <router-outlet ></router-outlet>
+
+
+    <div style="color:whitesmoke" class="bg-dark" id="footer-brasil" style="position: relative; top:300px;">
       </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" routerLink="projeto">Atlas Ambiental</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" routerLink="metodologia">Metodologia</a>
-                </li>
-
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" style=" cursor:pointer;">
-                     Mapas Tematicos
-                  </a>
-
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-                    <li><a class="dropdown-item" routerLink="regiao/1" style=" cursor:pointer;">Demografia</a></li>
-                    <li><a class="dropdown-item" routerLink="regiao/2" style=" cursor:pointer;">Administrativos</a></li>
-                    <li><a class="dropdown-item" routerLink="regiao/3" style=" cursor:pointer;">Violência</a></li>
-                    <li><a class="dropdown-item" routerLink="regiao/4" style=" cursor:pointer;">Mortalidade</a></li>
-                    <li><a class="dropdown-item" routerLink="regiao/5" style=" cursor:pointer;">Saude Ambiental</a></li>
-
-                  </div>
-                </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false" style=" cursor:pointer;">
-                  Textos de Apoio
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-
-                  <li><a href="#" class="dropdown-item"  routerLink="material/1" style=" cursor:pointer;">Textos de Apoio</a></li>
-                  <li><a href="#" class="dropdown-item"  routerLink="material/2" style=" cursor:pointer;">Numeros Temáticos</a></li>
-                  <li><a href="#" class="dropdown-item"  routerLink="material/3" style=" cursor:pointer;">Notas Infromativas</a></li>
-
-
-                </div>
-              </li>
-
-        <li class="nav-item"> <a class="nav-link" routerLink="equipe" href="#">Equipe</a> </li>
-
-
-      </ul>
     </div>
-  </nav>
-
-    <input   type="button" id="btnAumentar" class="btn bg-dark inputs" value=" A + " style="color: #EDEDED; font-size: 15px; width: 90px; height: 35px;" >
-    <input type="button" id="btnDiminuir" class="btn bg-dark inputs" value=" A - " style="color: #EDEDED; font-size: 15px; width: 90px; height: 35px;" >
-    <a type="button" id="btnDiminuir" class="btn bg-dark inputs" style="color: #EDEDED; font-size: 15px; height: 35px;" >Alto Contraste</a>
-
-  <div class="container">
-  <router-outlet></router-outlet>
-</div>
-
-</div>

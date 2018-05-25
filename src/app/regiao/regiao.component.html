@@ -1,16 +1,22 @@
 <div class="menu-lateral" *ngIf="regiao">
-    <div class="container-options">
-      <div class="container-fluid">
-        <div class="col-3">
+    <div class="">
+      <div class="">
+        <div class="">
           <br>
           <br>
 
-          <div class="list-group" style="font-size: 12px;">
+          <div class="" style="font-size: 16px;">
+            <ul style="list-style-type: none;    list-style-position:inside;
+            width: 35%;text-align: justify; ">
+            <hr>
 
-            <a *ngFor="let map of regiao.maps; let i = index"  class="list-group-item " (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)">
+            <li *ngFor="let map of regiao.maps; let i = index"   (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)" style="margin-bottom: 1px;">
 
-              {{ map.nome }}
-            </a>
+                {{ map.nome }}
+                <hr>
+            </li>
+
+          </ul>
           </div>
         </div>
       </div>
