@@ -7,11 +7,18 @@
 }
 .menu-lateral{
   position: relative;
+  right: 30px;
   top:-500px;
   width: 700px;
   text-align: justify;
   cursor:pointer;
   color: royalblue;
+}
+#ordena-mapas{
+position: relative;
+width: 1000px;
+top: 400px;
+right: 300px;
 }
 
 .titulo{
@@ -28,7 +35,7 @@
 .map-frame {
   position: relative;
   top: -1000px;
-  left: 300px;
+  left: 200px;
 }
 .box-titulo{
   position: relative;
@@ -39,10 +46,8 @@
 
 .legenda{
   position: relative;
-  top:-500px;
-
-  max-width: 100px;
-  max-height: 100px;
+  top: -450px !important;
+  left: 600px !important;
 
 }
 .branco{
