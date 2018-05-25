@@ -1,6 +1,17 @@
 <div class="{{estilo}}">
 <app-skip-import></app-skip-import>
 <div style="position: relative;top: -550px;" id="myDiv">
+    <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+        <ul id="menu-barra-temp" style="list-style:none;">
+          <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+            <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+          </li>
+          <li>
+            <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
+          </li>
+        </ul>
+      </div>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" routerLink="projeto">Atlas Ambiental</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -53,6 +64,11 @@
       </ul>
     </div>
   </nav>
+
+    <input   type="button" id="btnAumentar" class="btn bg-dark inputs" value=" A + " style="color: #EDEDED; font-size: 15px; width: 90px; height: 35px;" >
+    <input type="button" id="btnDiminuir" class="btn bg-dark inputs" value=" A - " style="color: #EDEDED; font-size: 15px; width: 90px; height: 35px;" >
+    <a type="button" id="btnDiminuir" class="btn bg-dark inputs" style="color: #EDEDED; font-size: 15px; height: 35px;" >Alto Contraste</a>
+
   <div class="container">
   <router-outlet></router-outlet>
 </div>
