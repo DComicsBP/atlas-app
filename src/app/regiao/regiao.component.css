@@ -1,53 +1,23 @@
 .box-conteudo{
-  position: relative;
-  top:-500px;
-  left: 40%;
-  width: 50%;
-  text-align: justify;
+
 }
 .menu-lateral{
-  position: relative;
-  right: 30px;
-  top:-500px;
-  width: 700px;
-  text-align: justify;
-  cursor:pointer;
-  color: royalblue;
-}
-#ordena-mapas{
-position: relative;
-width: 1000px;
-top: 400px;
-right: 300px;
-}
+ }
 
 .titulo{
-  position: relative;
-  top:-500px;
-  max-width: 300px;
-}
+ }
 .box-texto{
-  position: relative;
-  top:-500px;
-  top: 70px;
+
 }
 
 .map-frame {
-  position: relative;
-  top: -1000px;
-  left: 200px;
-}
+ }
 .box-titulo{
-  position: relative;
-  top:-500px;
-}
+ }
 
 
 
 .legenda{
-  position: relative;
-  top: -450px !important;
-  left: 600px !important;
 
 }
 .branco{
@@ -61,11 +31,6 @@ right: 300px;
 }
 
 .conteudo{
-  position: relative;
-  top:-500px;
-
-
-
 }
 
 /*

@@ -7,3 +7,9 @@ i{
   font-weight:bold;
 }
 
+.div-posicao{
+  position: relative;
+  width: 1500px;
+  height: 500px;
+
+  }

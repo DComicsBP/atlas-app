@@ -11,7 +11,8 @@
             width: 35%;text-align: justify; ">
             <hr>
 
-            <li *ngFor="let map of regiao.maps; let i = index"   (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)" style="margin-bottom: 1px;">
+            <li *ngFor="let map of regiao.maps; let i = index"
+              (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)" style="margin-bottom: 1px;" class="list-class">
 
                 {{ map.nome }}
                 <hr>
@@ -33,6 +34,9 @@
           <div class="box-texto">
             <p>
               {{ regiao.desc }}
+
+              teste
+              teste
             </p>
           </div>
 

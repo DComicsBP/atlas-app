@@ -1,13 +1,7 @@
-.div-posicao{
 
-  position: relative;
-  top: -400px;
-  left: 25%;
-  width: 60%;
-  text-align: justify;
-  }
 
 .contrast,
+.contrast list-class,
 .contrast router-outlet,
 .contrast nav,
 .contrast div,
