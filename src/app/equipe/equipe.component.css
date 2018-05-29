@@ -9,7 +9,8 @@ i{
 
 .div-posicao{
   position: relative;
-  width: 1500px;
-  height: 500px;
-
-  }
+  top: -400px;
+  left: 25%;
+  width: 60%;
+  text-align: justify;
+}

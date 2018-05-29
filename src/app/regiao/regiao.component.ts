@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RegiaoService } from './regiao.service';
-
+import { contraste, AppComponent } from './../app.component';
 @Component({
   selector: 'app-regioes',
   templateUrl: './regiao.component.html',
@@ -12,8 +12,9 @@ export class RegiaoComponent implements OnInit {
   showConteudo = true;
   regiao = null; mapUrl = null; titulo = null; Ltitulo = null; leg = null;
 
-  constructor(private _RegioesService: RegiaoService,
+  constructor(public _RegioesService: RegiaoService,
     private _activatedRoute: ActivatedRoute,
+    private _appComponent: AppComponent
   ) { }
 
   ngOnInit() {
@@ -22,9 +23,18 @@ export class RegiaoComponent implements OnInit {
       console.log('Router value => ', data);
       const routerId = Number(data.id);
       this._get(routerId);
+      // console.log('this status ===>>>', this.getStatus());
+      // this.ngOnChange();
     });
 
   }
+  // tslint:disable-next-line:member-ordering
+  // tslint:disable-next-line:use-life-cycle-interface
+/*  ngOnChange() {
+
+    console.log('this flagui ==>>', this._RegioesService.flagStatus);
+
+  }*/
 
   // tslint:disable-next-line:member-ordering
   legenda = null;
@@ -51,4 +61,11 @@ export class RegiaoComponent implements OnInit {
     if (this.regiao) { this.showConteudo = true; }
 
   }
+
+ /* getStatus() {
+    console.log('flags status', this._RegioesService.flagStatus);
+    return this._RegioesService.flagStatus;
+  }*/
+
 }
+/*ng config -g cli.warnings.versionMismatch false*/

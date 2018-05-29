@@ -1,7 +1,17 @@
 .box-conteudo{
-
+  position: relative;
+  top: -400px;
+  left: 300px;
 }
+
+
 .menu-lateral{
+  position: absolute;
+  font-size: 16px;
+  top:200px;
+  max-width: 700px;
+  width: 700px;
+
  }
 
 .titulo{
@@ -11,6 +21,10 @@
 }
 
 .map-frame {
+  position: relative;
+  top: -500px;
+  left: 300px;
+
  }
 .box-titulo{
  }
@@ -18,6 +32,9 @@
 
 
 .legenda{
+  position: relative;
+  top: -1000px  ;
+  left: 600px;
 
 }
 .branco{
@@ -31,7 +48,10 @@
 }
 
 .conteudo{
+  max-width: 1200px;
+  max-height: 700px;
 }
+
 
 /*
 Densidade Demográfica do Rio Grande do Sul, 2010 (hab/km2)

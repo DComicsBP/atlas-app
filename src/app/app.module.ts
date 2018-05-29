@@ -11,7 +11,7 @@ import { MetodologiaComponent } from './metodologia/metodologia.component';
 import { AppRoutingModule } from './app.routing.module';
 import { SkipImportComponent } from './skip-import/skip-import.component';
 import { FooterAppComponent } from './footer-app/footer-app.component';
-
+import { RegiaoService } from './regiao/regiao.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { FooterAppComponent } from './footer-app/footer-app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [RegiaoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
