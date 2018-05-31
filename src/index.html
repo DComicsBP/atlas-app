@@ -13,12 +13,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body style="font-family: Roboto" class="">
+<body style="font-family: Roboto">
+
+
 
   <app-root ></app-root>
 
-  <div style="color:whitesmoke" class="bg-dark" id="footer-brasil" style="position: relative">
-  </div>
+
+
 
 
 </body>
@@ -26,10 +28,16 @@
 
 
 <script>
+   $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+
+
     var $btnAumentar = $("#btnAumentar");
     var $btnDiminuir = $("#btnDiminuir");
     var $elemento = $("body #acessibility").find("*"); //encontra todos os elementos dentro do #content
     var fonts = [];
+
 
   function obterTamanhoFonte() {
     for (var i = 0; i < $elemento.length; i++) {

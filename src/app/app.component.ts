@@ -21,10 +21,7 @@ export class AppComponent {
   }
   onclickEvent(contrast) {
     if (this.estilo === 'contrast') { this.estilo = ''; } else if (this.estilo === '') { this.estilo = contrast; }
-    // tslint:disable-next-line:label-position
-    // tslint:disable-next-line:no-unused-expression
     contrast = this.estilo;
-   // this._RegiaoService.getStatusService(contrast);
   }
 
 }
