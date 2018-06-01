@@ -12,7 +12,12 @@ export let contraste;
 export class AppComponent {
 
   title = 'app';
-  src = '../assets/images/ifrs-google-maps.PNG';
+  ifrsRestinga01 = '../assets/images/ifrs-google-maps.PNG';
+  ifrsRestinga02 = '../assets/images/IFRSRESTINGA.PNG';
+  famed = '../assets/images/famed.PNG';
+  vale = '../assets/images/vale.PNG';
+  ifrsPOA = '../assets/images/ifrs-porto-alegre.PNG';
+  RS = '../assets/images/rs.PNG';
   estilo = '';
 
   constructor(private _RegiaoService: RegiaoService) {
