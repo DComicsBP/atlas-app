@@ -13,7 +13,7 @@
 
     <div class="box-texto">
       <p>
-        {{ regiao.desc }} teste teste
+
       </p>
     </div>
 
@@ -45,7 +45,7 @@
     </article>
 
     <article class="col-xs-3">
-      <div *ngFor="let legenda of this.legendasP; let i = index" style="margin: 7px;">
+      <div *ngFor="let legenda of this.legendasP; let i = index" style="margin: 7px; font-size: 15.9px">
         {{legenda.tit}}
       </div>
 
@@ -70,7 +70,7 @@
           width: 35%;text-align: justify; ">
             <hr>
 
-            <li *ngFor="let map of regiao.maps; let i = index" (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)" style="margin-bottom: 1px;"
+            <li *ngFor="let map of regiao.maps; let i = index" (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)" style="cursor: pointer; margin-bottom: 1px; color: steelblue"
               class="list-class">
 
               {{ map.nome }}

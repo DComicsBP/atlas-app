@@ -3,6 +3,13 @@
   height: 100%;
 }
 
+.contrast div _ngcontent-c2{
+  background: black !important;
+  color: yellow !important;
+}
+
+
+
 .contentImage {
   background: url(../assets/images/ifrs-google-maps.PNG) center center no-repeat fixed;
 

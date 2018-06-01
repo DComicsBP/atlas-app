@@ -6,8 +6,8 @@ const mapasAdministrativos =
             titulo: 'Regiões de Saúde',
             nome: 'Regiões de Saúde',
             link: 'https://fusiontables.google.com/embedviz?q=select+col26+from+1ZAxGejRZuKEiVSf5McmWMdPtlqceQmNGIviUHDHb&viz=MAP&h=false&lat=-30.67934390062796&lng=-52.59588756250001&t=1&z=6&l=col26&y=10&tmplt=11&hml=KML',
-            Ltitulo: ['0,0 - 6,143', '6.144 - 12.286', '12.287 - 18.429', '18.430 -   24.571', '24.572 - 30.714', '30.715 - 36.857', '36.858 - 43.0'],
-            leg: ['leg14 ', 'leg15', 'leg16', 'leg17', 'leg18', 'leg19', 'leg20']
+            Ltitulo: ['Belas Praias', 'Entre Rios', 'Fronteira Oeste', 'Verdes Campos','Bons Ventos', 'V.Paranhana/C. Serra', 'Portal das Missões', 'Vale Cai/Metropolitana', 'Carbonifera/Costa Doce', 'Vinhedos e Basalto', 'Sete Povos missões', 'adsda', 'dada','adsda', 'dada','adsda', 'dada','adsda', 'dada','adsda'],
+            leg: ['leg66 ', 'leg67', 'leg68', 'leg69', 'leg70', 'leg71', 'leg72', 'leg73', 'leg74', 'leg75', 'leg76', 'leg77', 'leg78', 'leg79', 'leg80', 'leg81', 'leg82', 'leg83', 'leg84', 'leg85', 'leg86 ', 'leg87', 'leg88', 'leg89', 'leg90', 'leg91', 'leg92', 'leg93', 'leg94', 'leg95', 'leg96', 'leg97']
         },
     ];
 
@@ -163,14 +163,13 @@ const mapasSaudeAmbiental =
         {
             titulo: 'Biomas do Rio Grande do Sul',
             nome: 'Biomas',
-            link: 'https://fusiontables.google.com/embedviz?q=select+col13+from+19qswfScrqONnn5_27CYEMRzLBiZFDSRp0MOjQJ1h&viz=MAP&h=false&lat=-30.165250892256093&lng=-54.455476148294&t=1&z=6&l=col13&y=2&tmplt=3&hml=KML',
-            Ltitulo: ['0,0 - 4,0', '4,1 - 8,0', '8,1 - 12,0', '', '', '0,0 - 4,0', '4,1 - 8,0', '8,1 - 12,0', '', '', '0,0 - 4,0', '4,1 - 8,0', '8,1 - 12,0', '', '', '0,0 - 4,0', '4,1 - 8,0', '8,1 - 12,0', '', '', '0,0 - 4,0', '4,1 - 8,0', '8,1 - 12,0', '', '', '0,0 - 4,0', '4,1 - 8,0', '8,1 - 12,0', '', ''],
+            link: 'https://fusiontables.google.com/embedviz?q=select+col13+from+19qswfScrqONnn5_27CYEMRzLBiZFDSRp0MOjQJ1h&viz=MAP&h=false&lat=-30.262711256177276&lng=-50.925965687500025&t=1&z=6&l=col13&y=3&tmplt=4&hml=KML',
+            Ltitulo: ['Mata Atlântica', 'Mata Atlântica e Pampa', 'Pampa'],
             leg: [
-                'leg1',
-                'leg2',
-                'leg3',
-                'leg4',
-                'leg5'
+                'leg52',
+                'leg51',
+                'leg50'
+
             ],
         }
     ];
