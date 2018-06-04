@@ -589,194 +589,229 @@ Biomas
 Administrativos
 
 */
+
+/*
+1
+*/
 .leg66{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#00ff00;
+  background-color:#ff0000;
 }
+/*2*/
 .leg67{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color: #ff9900;
 }
-
+/*3*/
 .leg68{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#ffff00;
 }
+/*4*/
 .leg69{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#ff0000;
+  background-color:#00ff00;
 }
+/*5*/
+
+
 .leg70{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#ff00ff;
 }
+/*6*/
 .leg71{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#f4cccc;
+  background-color: #f4cccc;
 }
+/*7*/
 .leg72{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#f9bc9c;
+  background-color:#444444;
 }
+/*8*/
+
 .leg73{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#ffe699;
+  background-color:#ffe599;
 }
+/*9*/
 .leg74{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#b6dfa8;
+  background-color:#b6d7a8;
 }
+/*10*/
 .leg75{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#b4a7d6;
 }
+/*11*/
 .leg76{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background: color #d5abbd;
+  background-color: #d5a6bd;
 }
+/*12*/
+
 .leg77{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#e06666;
 }
+/*13*/
+
 .leg78{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#f6626b;
+  background-color:#f6b26b;
 }
+/*14*/
+
 .leg79{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#ffd966;
 }
+/*15*/
+
 .leg80{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#6aa84f;
 }
+/*16*/
+
 .leg81{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background: color #76a5af;;
+  background-color: #76a5af;;
 }
+/*17*/
+
 .leg82{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#a64d79;
 }
+/*18*/
+
 .leg83{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#990000;
 }
+/*19*/
+
 .leg84{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#b45706;
 }
+/*20*/
+/*
 .leg85{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#b79000;
+  background-color:#bf9000;
 }
+*/
+/*21*/
+
 .leg86{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#38761d;
 }
+/*22*/
+
 .leg87{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#ffff00;
+  background-color:#351c75;
 }
+/*23*/
 .leg88{
   margin: 10px;
   width: 20px;
   height: 20px;
-  background-color:#351075;
+  background-color:#741b47;
 }
+/*24*/
 .leg89{
-  margin: 10px;
-  width: 20px;
-  height: 20px;
-  background-color:#741647;
-}
-.leg90{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#660000;
 }
-.leg91{
+/*25*/
+.leg90{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#8e7cc3;
 }
-.leg92{
+/*26*/
+.leg91{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#783f04;
 }
-.leg93{
+/*27*/
+.leg92{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#274e13;
 }
-.leg94{
+/*28*/
+.leg93{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#4c1130;
 }
-.leg95{
-  margin: 10px;
-  width: 20px;
-  height: 20px;
-  background-color:#401130;
-}
-.leg96{
+/*29*/
+.leg94{
   margin: 10px;
   width: 20px;
   height: 20px;
   background-color:#666666;
 }
-.leg97{
+/*30*/
+.leg95{
   margin: 10px;
   width: 20px;
   height: 20px;

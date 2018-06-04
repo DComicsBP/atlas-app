@@ -1,8 +1,8 @@
 .posicao-material {
   position: relative;
   text-align: justify;
-  top: -400px;
-  left: 150PX;
+  top: 0px;
+  left: 0PX;
   max-width: 1000PX;
 }
 .div-posicao{

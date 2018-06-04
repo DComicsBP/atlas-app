@@ -15,6 +15,7 @@ import { SkipImportComponent } from './skip-import/skip-import.component';
 
 import { RegiaoService } from './regiao/regiao.service';
 import { IframeSafePipe02 } from './iframe-safe.pipe02';
+import { ApoioComponent } from './apoio/apoio.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { IframeSafePipe02 } from './iframe-safe.pipe02';
     IframeSafePipe02,
     SkipImportComponent,
     FooterAppComponent,
+    ApoioComponent,
 
   ],
   imports: [
