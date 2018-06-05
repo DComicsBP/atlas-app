@@ -16,6 +16,7 @@ import { SkipImportComponent } from './skip-import/skip-import.component';
 import { RegiaoService } from './regiao/regiao.service';
 import { IframeSafePipe02 } from './iframe-safe.pipe02';
 import { ApoioComponent } from './apoio/apoio.component';
+import { MapSiteComponent } from './map-site/map-site.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ApoioComponent } from './apoio/apoio.component';
     SkipImportComponent,
     FooterAppComponent,
     ApoioComponent,
+    MapSiteComponent,
 
   ],
   imports: [
