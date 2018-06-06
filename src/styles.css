@@ -1,10 +1,6 @@
 /* para garantir que estes elementos ocuparão toda a tela */
 html {
-	width: 100%;
-	height: 100%;
-  font-family: Arial, Tahoma, sans-serif;
-	background: url(./assets/images/ifrs-google-maps.PNG) center center no-repeat fixed;
-
+background-color: #cbd;
 }
 
 #de  {

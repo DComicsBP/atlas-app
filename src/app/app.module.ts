@@ -17,6 +17,7 @@ import { RegiaoService } from './regiao/regiao.service';
 import { IframeSafePipe02 } from './iframe-safe.pipe02';
 import { ApoioComponent } from './apoio/apoio.component';
 import { MapSiteComponent } from './map-site/map-site.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MapSiteComponent } from './map-site/map-site.component';
     FooterAppComponent,
     ApoioComponent,
     MapSiteComponent,
+    CarouselComponent,
 
   ],
   imports: [
