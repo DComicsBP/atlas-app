@@ -1,4 +1,3 @@
-    <app-carousel></app-carousel>
 
 
 <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
@@ -13,75 +12,76 @@
 </div>
 
 <div class="{{estilo}}" id="acessibility">
+  <app-carousel></app-carousel>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" routerLink="projeto">Atlas Ambiental</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="metodologia">Metodologia</a>
-        </li>
+      <a class="navbar-brand" routerLink="projeto">Atlas Ambiental</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="metodologia">Metodologia</a>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            style=" cursor:pointer;">
-            Mapas Tematicos
-          </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              style=" cursor:pointer;">
+              Mapas Tematicos
+            </a>
 
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-            <li>
-              <a class="dropdown-item" routerLink="regiao/1" style=" cursor:pointer;">Demografia</a>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="regiao/2" style=" cursor:pointer;">Administrativos</a>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="regiao/3" style=" cursor:pointer;">Violência</a>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="regiao/4" style=" cursor:pointer;">Mortalidade</a>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="regiao/5" style=" cursor:pointer;">Saude Ambiental</a>
-            </li>
+              <li>
+                <a class="dropdown-item" routerLink="regiao/1" style=" cursor:pointer;">Demografia</a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="regiao/2" style=" cursor:pointer;">Administrativos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="regiao/3" style=" cursor:pointer;">Violência</a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="regiao/4" style=" cursor:pointer;">Mortalidade</a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="regiao/5" style=" cursor:pointer;">Saude Ambiental</a>
+              </li>
 
-          </div>
-        </li>
+            </div>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-            style=" cursor:pointer;">
-            Textos de Apoio
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-
-            <li>
-              <a href="#" class="dropdown-item" routerLink="material/1" style=" cursor:pointer;">Textos de Apoio</a>
-            </li>
-            <li>
-              <a href="#" class="dropdown-item" routerLink="material/2" style=" cursor:pointer;">Numeros Temáticos</a>
-            </li>
-            <li>
-              <a href="#" class="dropdown-item" routerLink="material/3" style=" cursor:pointer;">Notas Infromativas</a>
-            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              style=" cursor:pointer;">
+              Textos de Apoio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
 
-          </div>
-        </li>
+              <li>
+                <a href="#" class="dropdown-item" routerLink="material/1" style=" cursor:pointer;">Textos de Apoio</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item" routerLink="material/2" style=" cursor:pointer;">Numeros Temáticos</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item" routerLink="material/3" style=" cursor:pointer;">Notas Infromativas</a>
+              </li>
 
-        <li class="nav-item">
-          <a class="nav-link" routerLink="equipe" href="#">Equipe</a>
-        </li>
+
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="equipe" href="#">Equipe</a>
+          </li>
 
 
-      </ul>
-    </div>
-  </nav>
+        </ul>
+      </div>
+    </nav>
 
   <input type="button" id="btnAumentar" class="btn bg-dark inputs" value=" A + " style="color: #EDEDED; font-size: 15px; width: 90px; height: 35px;"
     onclick="obterTamanhoFonte()">
@@ -97,8 +97,19 @@
 
 
   </div>
-      <router-outlet></router-outlet>
-<app-apoio></app-apoio>
+
+<router-outlet></router-outlet>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
   <app-footer-app></app-footer-app>
 
-</div>

@@ -1,83 +1,86 @@
-
-<article class="conteudo">
-
-  <div *ngIf="showConteudo" class="box-conteudo" style="max-width: 600px;">
-
-    <div class="titulo">
-      <h3>{{ regiao.regiao }}</h3>
-    </div>
-
-    <div class="box-texto">
-      <p>
-
-      </p>
-    </div>
-
-  </div>
-
-
-  <div *ngIf="!showConteudo" class="box-conteudo" style="max-width: 700px;">
-
-    <br>
-    <br>
-    <br>
-    <h5 style="position: relative; left: 100px;"> {{ titulo }} </h5>
-
-
-    <iframe width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe "></iframe>
-
-
-  </div>
-
-
-<div class="container col-4 legenda" *ngIf="!showConteudo" style="max-width: 298px;">
-  <h5>Legenda </h5>
-  <div class="row">
-    <article style="position: relative;top: 2px" class="col-xs-3">
-      <div *ngFor="let legenda of this.legendasP; let i = index">
-
-        <div class="{{legenda.leg}}"></div>
-      </div>
-    </article>
-
-    <article class="col-xs-3">
-      <div *ngFor="let legenda of this.legendasP; let i = index" style="margin: 7px; font-size: 15.9px">
-        {{legenda.tit}}
-      </div>
-
-    </article>
-
-  </div>
-
-
-</div>
-
-</article>
-
-
-<div class="menu-lateral" *ngIf="regiao">
-  <div class="">
+<div style="height: 10px;">
+  <div class="menu-lateral" *ngIf="regiao">
     <div class="">
       <div class="">
-        <br>
-        <br>
-        <div class="" style="font-size: 12px;">
-          <ul style="list-style-type: none; list-style-position:inside;
-          width: 35%; text-align: justify; ">
-            <hr>
-
-            <li *ngFor="let map of regiao.maps; let i = index" (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)" style="cursor: pointer; margin-bottom: 1px; color: steelblue"
-              class="list-class">
-
-              {{ map.nome }}
+        <div class="">
+          <br>
+          <br>
+          <div class="" style="font-size: 12px;">
+            <ul style="list-style-type: none; list-style-position:inside;
+            width: 35%; text-align: justify; ">
               <hr>
-            </li>
 
-          </ul>
+              <li *ngFor="let map of regiao.maps; let i = index" (click)="showMap(map.link, map.titulo, map.Ltitulo, map.leg)" style="cursor: pointer; margin-bottom: 1px; color: steelblue; margin: 10px;"
+                class="list-class">
+
+                {{ map.nome }}
+
+              </li>
+              <hr>
+
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <br>
   </div>
-  <br>
-</div>
 
+
+  <article class="conteudo">
+
+    <div *ngIf="showConteudo" class="box-conteudo" style="max-width: 600px;">
+
+      <div class="titulo">
+        <h3>{{ regiao.regiao }}</h3>
+      </div>
+
+      <div class="box-texto">
+        <p>
+
+        </p>
+      </div>
+
+    </div>
+
+
+    <div *ngIf="!showConteudo" class="box-conteudo" style="max-width: 700px;">
+
+      <br>
+      <br>
+      <br>
+      <h5 style="position: relative; left: 100px;"> {{ titulo }} </h5>
+
+
+      <iframe width="700" height="500" scrolling="no" frameborder="no" [src]=" this.mapUrl | safe "></iframe>
+
+
+    </div>
+
+
+    <div class="container col-4 legenda" *ngIf="!showConteudo" style="max-width: 298px;">
+      <h5>Legenda </h5>
+      <div class="row">
+        <article style="position: relative;top: 2px" class="col-xs-3">
+          <div *ngFor="let legenda of this.legendasP; let i = index">
+
+            <div class="{{legenda.leg}}"></div>
+          </div>
+        </article>
+
+        <article class="col-xs-3">
+          <div *ngFor="let legenda of this.legendasP; let i = index" style="margin: 7px; font-size: 15.9px">
+            {{legenda.tit}}
+          </div>
+
+        </article>
+
+      </div>
+
+
+    </div>
+
+  </article>
+
+
+</div>
