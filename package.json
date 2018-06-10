@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "ng server",
+    "postinstall": "ng build --prod",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
